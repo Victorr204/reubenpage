@@ -6,9 +6,9 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="/reubenpage/build/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="/reubenpage/build/script.js"></script>
+    <script src="./build/script.js"></script>
 </head>
-<body class="min-h-screen w-screen p-0 m-0 bg-gray-900 text-white">
+<body class="min-h-screen w-screen p-0 m-0 bg-gray-900 text-white dark:bg-gray-950 dark:text-white dark:text-opacity-90 text-opacity-80">
 
 
     <!-- Header for large screen-->
@@ -43,7 +43,7 @@
          
         
         <!-- Hamburger Menu for small screens -->
-            <div class="lg:hidden flex justify-end flex-grow">
+            <div class="lg:hidden  flex justify-end flex-grow">
                 <button class="p-2 text-white focus:outline-none flex justify-end flex-grow" title="nav bar" onclick="toggleMenu()">
                     <!-- Hamburger Icon -->
                     <div class="space-y-1">
@@ -173,102 +173,338 @@
     </main>
 
 
-    <main class="w-screen lg:hidden md:hidden sm:block">    <!-- main section for small screen -->
-        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 bg-transparent">
-            <!-- section 1 small screen -->
-            <div class="flex flex-col space-y-3">
-                <h3 class="text-lg font-bold mb-2">Section 1</h3>
-                <div class="grid grid-cols-7 gap-4">
-                    <!-- 7 Columns for row 1 -->
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 1</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 2</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 3</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 4</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 5</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 6</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 7</div>
+    <!-- main section for small screen -->
+    <main class="w-screen lg:hidden md:hidden sm:block">
+        
+        <!--section 1-->
+        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0  mb-16">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Popular artists</h3>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                    <a href=""><img src="./img/one.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                    <h4 class="font-semibold">Asake</h4> 
+                    </ul>
+
+                    <!--area 2-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/two.jpg" class=" border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold ">Rema</h4> 
+                    </ul>
+
+                    <!--area 3-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/three.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Young John</h4> 
+                    </ul>
+
+                    <!--area 4-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/four.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Burna Boy</h4> 
+                    </ul>
+
+                    <!--area 5-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/five.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Victony</h4> 
+                    </ul>
+
+                    <!--area 6-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/six.png" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Olamide</h4> 
+                    </ul>
+
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/seven.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Fireboy DML</h4> 
+                    </ul>
+                    
                 </div>
             </div>
-        </section>
     
-        <section class="lg:hidden mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 bg-transparent">
-            <!-- section 2 small screen -->
-            <div class="flex flex-col space-y-3">
-                <h3 class="text-lg font-bold mb-2">Section 2</h3>
-                <div class="grid grid-cols-7 gap-4">
-                    <!-- 7 Columns for row 1 -->
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 1</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 2</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 3</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 4</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 5</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 6</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 7</div>
-                </div>
-            </div>
         </section>
-    
-        <section class="lg:hidden mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 bg-transparent">
-            <!-- section 3 small screen -->
-            <div class="flex flex-col space-y-3">
-                <h3 class="text-lg font-bold mb-2">Section 3</h3>
-                <div class="grid grid-cols-7 gap-4">
-                    <!-- 7 Columns for row 1 -->
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 1</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 2</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 3</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 4</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 5</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 6</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 7</div>
+
+        <!--Section 2-->
+        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 mb-16 ">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Popular albums</h3>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                    <a href=""><img src="./img/second.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                    <h4 class="font-semibold">Ademola</h4> 
+                    </ul>
+
+                    <!--area 2-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/fourth.jpg" class=" border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold ">Jiggy Forever</h4> 
+                    </ul>
+
+                    <!--area 3-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/first.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">HEIS</h4> 
+                    </ul>
+
+                    <!--area 4-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/third.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Lungu Boy</h4> 
+                    </ul>
+
+                    <!--area 5-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="./img/fifth.jpg" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Loseyi Professor</h4> 
+                    </ul>
+
+                    <!--area 6-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Olamide</h4> 
+                    </ul>
+
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold">Fireboy DML</h4> 
+                    </ul>
+                    
                 </div>
             </div>
+    
         </section>
-    
-        <section class="lg:hidden mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 bg-transparent">
-            <!-- section 4 small screen -->
-            <div class="flex flex-col space-y-3">
-                <h3 class="text-lg font-bold mb-2">Section 4</h3>
-                <div class="grid grid-cols-7 gap-4">
-                    <!-- 7 Columns for row 1 -->
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 1</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 2</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 3</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 4</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 5</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 6</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 7</div>
+
+
+        <!--Section 3-->
+        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 mb-16">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Popular Radio</h3>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                    <a href=""><img src="." class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                    <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 2-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class=" border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold "></h4> 
+                    </ul>
+
+                    <!--area 3-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 4-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 5-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 6-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 7-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+                    
                 </div>
             </div>
+    
+        </section>        
+        
+        <!--Section 4-->
+        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 mb-16 ">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Featured Charts</h3>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                    <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                    <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 2-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class=" border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold "></h4> 
+                    </ul>
+
+                    <!--area 3-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 4-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 5-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 6-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 7-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+                    
+                </div>
+            </div>
+    
         </section>
-    
-        <section class="lg:hidden mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 bg-transparent">
-            <!-- section 5 small screen -->
-            <div class="flex flex-col space-y-3">
-                <h3 class="text-lg font-bold mb-2">Section 5</h3>
-                <div class="grid grid-cols-7 gap-4">
-                    <!-- 7 Columns for row 1 -->
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 1</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 2</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 3</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 4</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 5</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 6</div>
-                    <div class="w-32 h-32 bg-gray-700 text-center flex items-center justify-center">Box 7</div>
+
+        <!--Section 5-->
+        <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0 mb-16">
+            <div>
+                <h3 class="text-lg font-bold mb-2">Spotify Playlists</h3>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-44 w-32">
+                    <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                    <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 2-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class=" border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold "></h4> 
+                    </ul>
+
+                    <!--area 3-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="." class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 4-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 5-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 6-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+
+                    <!--area 7-->
+                    <ul class="h-44 w-32">
+                        <a href=""><img src="" class="border border-gray-800 rounded-xl w-32 h-40" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                    </ul>
+                    
                 </div>
             </div>
-        </section></main>
+    
+        </section>
+    </main>
+
+
+    <!--Footer for small section-->
+    <footer class="lg:hidden md:hidden sm:block">
+        <div class="mb-14">
+            <h2 class="font-semibold text-xl">Company</h2>
+            <p>
+                <ul>
+                    <li><a href="" class="text-white text-opacity-60">Abouts</a></li>
+                    <li><a href="" class="text-white text-opacity-60">jobs</a></li>
+                    <li><a href="" class="text-white text-opacity-60">For the Record</a></li>
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="mb-14">
+            <h2 class="font-semibold text-xl">Comminunities</h2>
+            <p>
+                <ul>
+                    <li><a href="" class="text-white text-opacity-60">For Artists</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Developers</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Advertising</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Investors</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Vendors</a></li>
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="mb-14">
+            <h2 class="font-semibold text-xl">Usuful links</h2>
+            <p>
+                <ul>
+                    <li><a href="" class="text-white text-opacity-60">Support</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Free Mobile App</a></li>
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="mb-14">
+            <h2 class="font-semibold text-xl">Spotify plans</h2>
+            <p>
+                <ul>
+                    <li><a href="" class="text-white text-opacity-60">Premium Individual</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Premium Deo</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Premium Family</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Premium student</a></li>
+                    <li><a href="" class="text-white text-opacity-60">Spotify Free</a></li>
+                </ul>
+            </p>
+        </div>
+
+        
+
+    </footer>
 
 
     <!--here is the footer section-->
     <footer class="hidden md:flex lg:flex w-screen h-20 p-3 m-0 bottom-0 fixed bg-gradient-to-r from-fuchsia-500 to-blue-500">
-        <div class="font-semibold ">
+        <div class="font-semibold  bg-transparent">
             <a href="#">Preview of Spotify</a>
             <br>
             <a href="#">Sign up to get unlimited songs and podcasts with occasional ads.</a>  <a href="#">No credit card needed</a>
         </div>
        
-        <nav class="flex items-center justify-end flex-grow mt-4 ml-5 font-bold">
+        <nav class="flex items-center justify-end flex-grow mt-4 ml-5 font-bold bg-transparent">
             <button class="border border-white text-black bg-white m-0 rounded-3xl pl-5 pr-5 pt-2 pb-2 hover:bg-white hover:bg-opacity-60">Sign up free</button>
         </nav>
     </footer>

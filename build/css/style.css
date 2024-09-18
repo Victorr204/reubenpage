@@ -1325,3 +1325,6 @@ video {
     display: none;
   }
 }
+.bg-gradient-to-r{
+  background: radial-gradient(purple, blue);
+}
