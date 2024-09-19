@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="/reubenpage/build/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="./build/script.js"></script>
 </head>
-<body class="min-h-screen w-screen p-0 m-0 bg-gray-900 text-white dark:bg-gray-950 dark:text-white dark:text-opacity-90 text-opacity-80">
+<body class="items-center min-h-screen w-screen p-0 m-0 bg-gray-950 text-white dark:bg-gray-950 dark:text-white dark:text-opacity-90 text-opacity-80">
 
 
     <!-- Header for large screen-->
-    <header class=" bg-transparent h-14 w-screen justify-between items-center hidden lg:flex md:flex">
+    <header class=" bg-slate-900 h w-screen justify-between items-center hidden lg:flex md:flex sticky top-0">
         <h1 class="flex-shrink-0">
             <a href="#"><img src="./img/logo.png" alt="logo" title="logo" class="p-0 m-0 w-8 ml-6 mt-2 sm:w-10"></a>
         </h1>
@@ -36,7 +37,7 @@
 
 
     <!-- Header for small screen screen-->
-    <header class="lg:hidden md:hidden max-w-screen-sm bg-gray-900 h-16 items-center flex sticky top-0 p-0 m-0  justify-normal">
+    <header class="lg:hidden md:hidden max-w-screen-sm bg-gray-950 h-16 items-center flex sticky top-0 p-0 m-0  justify-normal">
         
         <h1 class=""></h1>
         <a href="#"><img src="./img/logo.png" alt="logo" title="logo" class=" p-0 m-0 w-8 ml-6 mt-2"></a></h1>
@@ -70,10 +71,11 @@
 
     </header>
 
+ 
     <!--main section for big screen-->
-    <main class="lg:flex md:block hidden shrink-0">
+    <main class="lg:flex md:flex hidden">
         <!--section 1-->
-        <section class="bg-gray-500 bg-opacity-50 border border-gray-500 w-96 m-0 ml-3 mt-9 p-0 pl-5 pt-2 min-h-fit rounded-2xl">
+        <section class="flex flex-col bg-gray-500 bg-opacity-50 border border-gray-500 w-96 m-0 ml-3 mt-1 p-0 pl-5 pt-2 h-3/5  rounded-2xl">
             <!--area 1-->
             <div class="flex ">
                 <img src="" alt="">
@@ -112,69 +114,219 @@
         </section>
 
         <!--section 2-->
-        <section class="grid grid-flow-row  grid-col-7 overflow-y-scroll  bg-gray-500 bg-opacity-50 border border-white ml-12 w-3/4 mt-12 md:hidden lg:flex rounded-3xl">
-            <div class="p-10">
-                <h1 class="font-semibold text-3xl">Popular Artist</h1>
-                <!--area a-->
-                <div class="grid grid-cols-7 gap-4 mt-9">
-                    <!-- area 1-->
-                     <div class="flex-shrink">
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/one.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44"></div>
-                        <h4 class="font-semibold">Asake</h4> 
-                        <p class="opacity-70">Artist</p>
-                     </div>
+        <section class="bg-gray-500 bg-opacity-50 ml-5 rounded-xl grid grid-cols-1 p-5 overflow-y-scroll">
+            <!--area 1-->
+            <div class="mb-24 overflow-x-scroll grid grid-flow-row">
+                <h1 class="text-3xl font-semibold mb-7">Popular artists</h1>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-60 w-60">
+                    <a href=""><img src="./img/one.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                    <h4 class="font-semibold">Asake</h4> 
+                    <p class="opacity-70">Artist</p>
+                    </ul>
 
-                     <!--Area 2-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/two.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44"></div>
+
+                    <!--area 2-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/two.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
                         <h4 class="font-semibold">Rema</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
 
-                     <!--Area 3-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/three.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44"></div>
+
+
+
+                        <!--area 3-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/three.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+
                         <h4 class="font-semibold">Young John</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
 
-                     <!--Area 4-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/four.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44"></div>
+                        <!--area 4-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/four.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
                         <h4 class="font-semibold">Burna Boy</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
 
-                     <!--Area 5-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/five.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44"></div>
+
+                        <!--area 5-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/five.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
                         <h4 class="font-semibold">Victony</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
 
-                     <!--Area 6-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/six.png" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44 "></div>
+                        <!--area 6-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/six.png" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
                         <h4 class="font-semibold">Olamide</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
 
-                     <!--Area 7-->
-                     <div>
-                        <div class="w-40 h-48 bg-transparent text-center flex items-center justify-center"><img src="./img/seven.jpg" alt="asake" class="m-auto border-solid border-2  border-slate-500 rounded-full h-44 w-44 "></div>
+
+
+
+                            <!--area 7-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/seven.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
                         <h4 class="font-semibold">Fireboy DML</h4> 
                         <p class="opacity-70">Artist</p>
-                     </div>
+                        </ul>
+
+
+
                     
                 </div>
-
             </div>
+
+
+            <!--Area 2-->
+            <div  class="mb-24 overflow-x-scroll grid grid-flow-row">
+                <h1 class="text-3xl font-semibold mb-7">Popular artists</h1>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-60 w-60">
+                    <a href=""><img src="./img/first.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                    <h4 class="font-semibold"></h4> 
+                    <p class="opacity-70"></p>
+                    </ul>
+
+
+                    <!--area 2-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/second.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+
+
+                        <!--area 3-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/third.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+                        <!--area 4-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/fourth.jpg" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+                        <!--area 5-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/six.png" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+                        <!--area 6-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+
+                              <!--area 7-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+                    
+                </div>
+            </div>
+
+
+            <!--Area 3-->
+            <div class="mb-24 overflow-x-scroll grid grid-flow-row">
+                <h1 class="text-3xl font-semibold mb-7">Popular artists</h1>
+                <div class="will-change-auto h-52 flex space-x-4">
+                    <!--area 1-->
+                    <ul class="h-60 w-60">
+                    <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                    <h4 class="font-semibold"></h4> 
+                    <p class="opacity-70"></p>
+                    </ul>
+
+
+                    <!--area 2-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+
+
+                        <!--area 3-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+                        <!--area 4-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+                        <!--area 5-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+                        <!--area 6-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+
+                              <!--area 7-->
+                    <ul class="h-60 w-60">
+                        <a href=""><img src="./img/" class="border border-gray-800 rounded-full w-60 h-60" alt=""></a>
+                        <h4 class="font-semibold"></h4> 
+                        <p class="opacity-70"></p>
+                        </ul>
+
+
+                    
+                </div>
+            </div>
+
+
+
         </section>
+        
+
     </main>
 
 
     <!-- main section for small screen -->
-    <main class="w-screen lg:hidden md:hidden sm:block">
+    <main class="w-screen lg:hidden md:hidden sm:block ">
         
         <!--section 1-->
         <section class=" mt-6 grid grid-rows-1 grid-flow-col  overflow-x-scroll p-0  mb-16">
@@ -440,7 +592,7 @@
 
 
     <!--Footer for small section-->
-    <footer class="lg:hidden md:hidden sm:block">
+    <footer class=" ml-4 lg:hidden md:hidden sm:block">
         <div class="mb-14">
             <h2 class="font-semibold text-xl">Company</h2>
             <p>
@@ -491,13 +643,13 @@
             </p>
         </div>
 
-        
+
 
     </footer>
 
 
-    <!--here is the footer section-->
-    <footer class="hidden md:flex lg:flex w-screen h-20 p-3 m-0 bottom-0 fixed bg-gradient-to-r from-fuchsia-500 to-blue-500">
+    <!--here is the footer for big section-->
+    <footer class="hidden md:flex lg:flex w-screen h-20 p-3 m-0 bottom-0 fixed bg-gradient-to-r from-fuchsia-500 to-blue-500 ">
         <div class="font-semibold  bg-transparent">
             <a href="#">Preview of Spotify</a>
             <br>
